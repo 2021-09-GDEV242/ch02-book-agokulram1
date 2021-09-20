@@ -11,15 +11,17 @@ class Book
     // The fields.
     private String author;
     private String title;
+    private int pages;
 
     /**
      * Set the author and title fields when this object
      * is constructed.
      */
-    public Book(String bookAuthor, String bookTitle)
+    public Book(String bookAuthor, String bookTitle, int bookpages)
     {
         author = bookAuthor;
         title = bookTitle;
+        pages = bookpages;
     }
     // Add the methods here ...
     /**
@@ -39,6 +41,14 @@ class Book
         return title;
     }
     /**
+     * 85 - modify object add a new private field with appropriate accessors
+     * accesor method for pages
+     */
+    public int getPages()
+    {
+        return pages;
+    }
+    /**
      * 84 - create print utility methods for private fields
      * This method will print the author
      */
@@ -54,6 +64,8 @@ class Book
    {
        System.out.println("Title:"+title);
     }
+    
+    
 }
 
 
