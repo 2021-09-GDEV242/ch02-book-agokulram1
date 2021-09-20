@@ -69,10 +69,16 @@ class Book
     /**
      * 87 - add a printDetails method that displays formatted output for all private fields
      * This method will print author
+     * 89- Print reference number as ZZZ when it is empty. 
      */
     public void printDetails()
     {
-        System.out.println("Title: "+ title+", Author: "+author+ ", Pages: "+ pages);
+        String prtRefNumber="ZZZ";
+        if (refNumber.length() > 0)
+        {
+            prtRefNumber = refNumber;
+        }
+        System.out.println("Title: "+ title+", Author: "+author+ ", Pages: "+ pages+", Ref Number: "+prtRefNumber);
     }
     /**
      * 88 - modify object add a new private field with appropriate accessors
