@@ -68,11 +68,13 @@ class Book
     }
     /**
      * 87 - add a printDetails method that displays formatted output for all private fields
-     * This method will print author
+     * This method will print author, title, pages, no. of times borrowed.
+     * 91 - Added the borrowed text
      */
     public void printDetails()
     {
         System.out.println("Title: "+ title+", Author: "+author+ ", Pages: "+ pages);
+        System.out.println("This book as has been borrowed "+borrowed+" times");
     }
     /**
      * 88 - modify object add a new private field with appropriate accessors
@@ -96,6 +98,23 @@ class Book
         return refNumber;
     }
     
+     /**
+     * 
+     * 91 - modify object add a new private field with appropriate accessors, mutators and reporting
+     */
+    public int getBorrowed()
+    {
+        return borrowed;
+    }
+    
+    /*
+     * 91 - modify object add a new private field with appropriate accessors, mutators and reporting
+     * Borrowed method will increment the borrowed field by 1, every time its called. 
+     */
+    public void borrow()
+    {
+        borrowed +=1; 
+    }
 }
 
 
