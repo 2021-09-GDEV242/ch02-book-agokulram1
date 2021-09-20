@@ -12,7 +12,7 @@ class Book
     private String author;
     private String title;
     private int pages;
-
+    private String refNumber;
     /**
      * Set the author and title fields when this object
      * is constructed.
@@ -22,6 +22,7 @@ class Book
         author = bookAuthor;
         title = bookTitle;
         pages = bookpages;
+        refNumber = "";
     }
     // Add the methods here ...
     /**
@@ -71,6 +72,23 @@ class Book
     public void printDetails()
     {
         System.out.println("Title: "+ title+", Author: "+author+ ", Pages: "+ pages);
+    }
+    /**
+     * 88 - modify object add a new private field with appropriate accessors
+     * This method is a mutator for setting refnumber
+     */
+    public void setRefNumber(String ref)
+    {
+     refNumber = ref;  
+    }
+    
+     /**
+     * 88 - modify object add a new private field with appropriate accessors
+     * accesor method for refNumber
+     */
+    public String getRefNumber()
+    {
+        return refNumber;
     }
     
 }
