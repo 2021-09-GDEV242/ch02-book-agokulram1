@@ -38,4 +38,22 @@ class Book
     {
         return title;
     }
+    /**
+     * 84 - create print utility methods for private fields
+     * This method will print the author
+     */
+    public void printAuthor()
+    {
+        System.out.println("Author:"+author);    
+    }
+    /**
+    * 84 - create print utility methods for private fields
+    * This method will print the title
+    */
+    public void printTitle()
+   {
+       System.out.println("Title:"+title);
+    }
 }
+
+
