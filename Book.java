@@ -76,10 +76,14 @@ class Book
     /**
      * 88 - modify object add a new private field with appropriate accessors
      * This method is a mutator for setting refnumber
+     * 90 - modify object add a new private field with appropriate accessors, mutators and reporting
      */
     public void setRefNumber(String ref)
     {
-     refNumber = ref;  
+        if (ref.length() >= 3)
+            refNumber = ref;  
+        else
+            System.out.println("The Ref Number should atleast be 3 characters long");
     }
     
      /**
